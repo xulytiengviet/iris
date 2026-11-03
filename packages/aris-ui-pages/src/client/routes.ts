@@ -13,6 +13,7 @@ export interface Route {
 }
 
 export const ROUTES = {
+  dashboard: { kind: 'page', nav: true, order: 4 },
   office: { kind: 'page', nav: true, order: 5 },
   brain: { kind: 'page', nav: true, order: 6 },
   routine: { kind: 'page', nav: true, order: 7 },

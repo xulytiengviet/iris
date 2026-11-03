@@ -22,12 +22,14 @@ export const TEXTS: readonly PageText[] = [
   // Nhãn mục thanh bên của các trang có mục riêng.
   text(
     {
+      'nav.dashboard': 'Command center',
       'nav.office': 'Office',
       'nav.brain': 'Brain',
       'nav.routine': 'Routines',
       'nav.learn': 'Learning',
     },
     {
+      'nav.dashboard': 'Điều hành',
       'nav.office': 'Văn phòng',
       'nav.brain': 'Brain',
       'nav.routine': 'Routine',

@@ -31,11 +31,11 @@ describe('định tuyến trang aris', () => {
     expect(resolveRoute('brain', { view: 'notes' })).toEqual({ to: 'brain', params: { view: 'notes' } })
   })
 
-  it('thanh bên có bốn mục: Văn phòng, Brain, Routine, Tự học', () => {
+  it('thanh bên có năm mục: Điều hành, Văn phòng, Brain, Routine, Tự học', () => {
     const nav = Object.entries(ROUTES)
       .filter(([, r]) => 'nav' in r && r.nav)
       .sort(([, a], [, b]) => ('order' in a ? a.order : 0) - ('order' in b ? b.order : 0))
       .map(([id]) => id)
-    expect(nav).toEqual(['office', 'brain', 'routine', 'learn'])
+    expect(nav).toEqual(['dashboard', 'office', 'brain', 'routine', 'learn'])
   })
 })

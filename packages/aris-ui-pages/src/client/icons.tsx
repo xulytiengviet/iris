@@ -17,6 +17,12 @@ export function NavIcon({ id, size, active }: { id: RouteId; size: number; activ
   const soft = active ? 0.2 : 0
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" style={{ flex: 'none' }}>
+      {id === 'dashboard' && (
+        <>
+          <rect x={3} y={3} width={18} height={18} rx={3} {...stroke} fill={fill} fillOpacity={soft} />
+          <path d="M7 16v-4m5 4V8m5 8v-6M6 18h12" {...stroke} />
+        </>
+      )}
       {id === 'office' && (
         <>
           <rect x={3} y={4} width={18} height={16} rx={2} {...stroke} fill={fill} fillOpacity={soft} />

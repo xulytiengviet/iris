@@ -64,6 +64,7 @@ import { Skills } from './mind/Skills.js'
 import { Office } from './office/Office.js'
 import { OFFICE_CSS } from './office/styles.js'
 import { SettingsPage } from './settings/SettingsPage.js'
+import { Dashboard } from './settings/Dashboard.js'
 import { joinProviders } from './settings/provider-data.js'
 import { BotProfile } from './team/Bot.js'
 import { CloneBot } from './team/CloneBot.js'
@@ -183,6 +184,7 @@ export const inject = ['slots', 'locale']
 
 /** Trang đã dựng; trang chưa có ở đây thì chưa đăng ký. */
 const PAGES: Partial<Record<RouteId, ComponentType<PageProps>>> = {
+  dashboard: Dashboard,
   settings: SettingsPage,
   memory: Memory,
   skills: Skills,
